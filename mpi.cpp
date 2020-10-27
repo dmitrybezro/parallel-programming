@@ -1,5 +1,6 @@
 #include "mpi.h"
 
+#include<locale.h>
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -22,7 +23,7 @@ int min_loc(vector<int> vec, int num_elem)
 
 int main(int argc, char** argv)
 {
-
+    setlocale(LC_ALL, "Russian");
     // Почитать
     const size_t row = 3;
     const size_t col = 4;
